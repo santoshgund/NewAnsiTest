@@ -1,4 +1,4 @@
 plugin: azure_rm
 include_vm_resource_groups:
-  - rg-dev
+  - RG_ANSIBLE_TEST
 auth_source: auto
