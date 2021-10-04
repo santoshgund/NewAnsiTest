@@ -1,0 +1,12 @@
+linux:
+  hosts:
+    52.157.98.145
+
+windows:
+  hosts:
+    52.157.98.149:
+      ansible_user: ojala
+      ansible_password: FOOfoo#123
+      ansible_port: 5986
+      ansible_connection: winrm
+      ansible_winrm_server_cert_validation: ignore
