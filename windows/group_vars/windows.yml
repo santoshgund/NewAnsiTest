@@ -6,22 +6,3 @@ ansible_port: 5986
 ansible_connection: winrm
 # The following is necessary for Python 2.7.9+ when using default WinRM self-signed certificates:
 ansible_winrm_server_cert_validation: ignore
-
-# ---
-# - name: Windows Baseline
-  # hosts: windows
-  # connection: winrm
-  # gather_facts: true
-  # vars:
-    # ansible_user: ojala
-    # ansible_password: FOOfoo#123
-    # ansible_port: 5986
-    # ansible_connection: winrm
-    # # The following is necessary for Python 2.7.9+ when using default WinRM self-signed certificates:
-    # ansible_winrm_server_cert_validation: ignore
-
-  tasks:
-    - name: Ensure 7-Zip is installed via Chocolatey
-      win_chocolatey:
-        name: 7zip
-        state: present
