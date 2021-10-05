@@ -1,14 +1,15 @@
----
-- name: Windows Baseline
-  hosts: windows
-  connection: winrm
-  gather_facts: true
-  vars:
-    ansible_user: "{{user_name}}"
-    ansible_password: "{{password}}"
-    ansible_connection: winrm 
-    ansible_winrm_transport: basic 
-    ansible_winrm_server_cert_validation: ignore
+# ---
+# - name: Windows Baseline
+  # hosts: windows
+  # connection: winrm
+  # gather_facts: true
+  # vars:
+    # ansible_user: "{{user_name}}"
+    # ansible_password: "{{password}}"
+    # ansible_connection: winrm 
+    # ansible_winrm_transport: basic 
+    # ansible_winrm_server_cert_validation: ignore
+- hosts: windows
 
   tasks:
     - name: Ensure 7-Zip is installed via Chocolatey
